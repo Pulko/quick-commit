@@ -1,71 +1,57 @@
-# quick-commit README
+# Quick Commit - VS Code Extension
 
-This is the README for your extension "quick-commit". After writing up a brief description, we recommend including the following sections.
+[![Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/pulko.quick-commit)](https://marketplace.visualstudio.com/items?itemName=pulko.quick-commit)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/pulko.quick-commit)](https://marketplace.visualstudio.com/items?itemName=pulko.quick-commit)
+[![Ratings](https://img.shields.io/visual-studio-marketplace/r/pulko.quick-commit)](https://marketplace.visualstudio.com/items?itemName=pulko.quick-commit)
+
+Quick Commit is a Visual Studio Code extension that allows you to quickly commit the whole file without any hassle or extra clicks. This extension simplifies the process of making commits by providing a streamlined workflow directly within the editor.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Quick Commit**: Commit the entire file with a single command.
+- **Commit Message Prompt**: Prompt to enter a commit message with a predefined prefix.
+- **Custom Commit Prefixes**: Choose from a list of common commit message prefixes or enter a custom prefix.
+- **Git Integration**: Ensures that the project is a Git repository before committing.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Open the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+2. Search for "Quick Commit" and click Install.
+3. Reload VS Code to activate the extension.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
+
+1. Open a file in a Git repository.
+2. Open the command palette (`Ctrl+Shift+P`) and type `Quick Commit: Commit File`.
+3. Follow the prompts to enter a commit message prefix and the commit message.
+4. The extension will add and commit the current file.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Visual Studio Code
+- Git must be installed and available in your system PATH
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+This extension does not require any special settings.
 
-For example:
+## Known Limitations
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- Does only support Git
+- Does only support committing the whole file
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
+- Initial release of Quick Commit
 
-### 1.0.1
+## Meta Information
 
-Fixed issue #.
+**Publisher**: Pulko
 
-### 1.1.0
+**Company Website**: [https://pulko-app.com](https://pulko-app.com)
 
-Added features X, Y, and Z.
+**LinkedIn**: [https://linkedin.com/in/fedor-tkachenko](https://linkedin.com/in/fedor-tkachenko)
 
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Source Code Repository**: [https://github.com/Pulko/quick-commit](https://github.com/Pulko/quick-commit)
