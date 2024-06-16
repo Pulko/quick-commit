@@ -1,0 +1,73 @@
+{
+  "name": "quick-commit",
+  "displayName": "quick-commit",
+  "description": "Extension for faster and more convinient work with 'git commit' command",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:quick-commit.commit"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "quick-commit.commitFile",
+        "title": "Commit file",
+        "category": "Quick",
+        "shortTitle": "Commit",
+        "icon": {
+          "light": "./icons/light/icon.png",
+          "dark": "./icons/dark/icon.png"
+        }
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "quick-commit.commitFile",
+        "key": "cmd+q cmd+c",
+        "mac": "cmd+q cmd+c",
+        "when": "editorFocus"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "quick-commit.commitFile",
+          "when": "true",
+          "alt": "quick-commit.commitFile",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "quick-commit.commitFile",
+          "when": "true"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0"
+  }
+}
