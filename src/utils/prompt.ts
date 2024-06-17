@@ -17,7 +17,7 @@ export async function promptCommitMessage(
         document.uri.fsPath
       )}`,
       prompt:
-        "Enter the commit message for this file.",
+        "Enter the commit message for this file!",
     });
   if (!commitMessage) {
     vscode.window.showInformationMessage(
