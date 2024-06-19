@@ -22,9 +22,25 @@ Quick Commit is a Visual Studio Code extension that allows you to quickly commit
 ## Usage
 
 1. Open a file in a Git repository.
-2. Open the command palette (`Ctrl+Shift+P`) and type `Quick Commit: Commit File`.
+2. Open the command palette (`cmd+shift+p`) and type `Quick Commit: Commit File`.
 3. Follow the prompts to enter a commit message prefix and the commit message.
 4. The extension will add and commit the current file.
+
+### Usage with Keyboard Shortcuts
+
+1. Open a file in a Git repository.
+2. Commit file with (`cmd+q cmd+c`).
+3. Follow the prompts to enter a commit message prefix and the commit message.
+4. The extension will add and commit the current file.
+
+### Usage with toolbar icons
+
+1. Open a file in a Git repository.
+2. Click on the Quick Commit icon in the toolbar.
+3. Follow the prompts to enter a commit message prefix and the commit message.
+4. The extension will add and commit the current file.
+
+<img width="860" height="320" src="assets/usage.png">
 
 ## Requirements
 
