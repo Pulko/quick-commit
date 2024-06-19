@@ -1,8 +1,8 @@
 {
   "name": "quick-commit",
-  "displayName": "quick-commit",
+  "displayName": "Quick commit",
   "description": "Extension for faster and more convinient work with 'git commit' command",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "publisher": "pulko",
   "icon": "icons/logo/qc-logo.png",
   "repository": {
